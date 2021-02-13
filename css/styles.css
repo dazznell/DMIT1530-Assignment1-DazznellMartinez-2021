@@ -121,13 +121,15 @@ footer li:first-child{
     padding: 1rem;
 }
 .gallery img{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .gallery section{
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
-.gallery section:first-child{
-    background: none;
+.gallery div{
+    padding: 0;
 }
 
 /* === BLOG === */
@@ -175,15 +177,26 @@ footer li:first-child{
         margin: 0 auto;
         display: flex;
     }
-    img, .bottom-banner img{
+    .blog img{
         margin-right: 1rem;
         height: 100%;
-        max-width: 300px;
+        max-width: 75%;
+        width: 100%;
+        display: flex;
+    }
+    .bottom-banner img{
+        margin-right: 1rem;
+        height: 100%;
+        max-width: 40%;
         width: 100%;
         display: flex;
     }
     .bottom-banner div{
         justify-content: flex-start;
+        padding-top: 0;
+    }
+    .bottom-banner div:last-of-type{
+        padding-top: 0;
     }
     .container{
         display: flex;
@@ -204,10 +217,43 @@ footer li:first-child{
     }
 
     /* === GALLERY === */
+    .gallery div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery {
+        padding: 0;
+        margin: 0;
+    }
+    .gallery h2{
+        margin: 1rem 0 0 1.5rem;
+    }
+    /* === images === */
 
-    .gallery{
+    .gallery img:nth-of-type(2), 
+    .gallery img:nth-of-type(3){
+        max-width: 50%;
+        height: 100%;
         display: flex;
     }
 
+    .gallery img:nth-of-type(4),
+    .gallery img:nth-of-type(5),
+    .gallery img:nth-of-type(6),
+    .gallery img:nth-of-type(7) {
+        max-width: 25%;
+        height: 100%;
+    }
+
+    .gallery img:nth-of-type(8){
+        max-width: 75%;
+    }
+    .gallery img:last-of-type{
+        max-width: 25%;
+    }
+
+    .gallery img{
+        padding: 0 0.75rem;
+    }
 
 }

@@ -9,7 +9,6 @@ h1,h2,h3, h4{font-weight: bold;}
 
 
 /* === HEADER === */
-
 header, div{
     padding: 1rem;
 }
@@ -38,10 +37,10 @@ header a:first-child{
     background-image: url(../img/white-linear-angled-architecture.jpg);
     background-size: 100%;
     background-position: center bottom;
-    height: 200px;
+    height: 300px;
     width: 100%;
-    margin-bottom: 32px;
-  }
+    margin-bottom: 32px;;
+}
 
 
 
@@ -128,8 +127,8 @@ footer li:first-child{
     flex-direction: column;
     margin: 0 auto;
 }
-.gallery div{
-    padding: 0;
+.gallery .title{
+
 }
 
 /* === BLOG === */
@@ -148,7 +147,10 @@ footer li:first-child{
 .blog section:first-child{
     background: none;
 }
-
+.blog .title{
+    padding-bottom: 0;
+    padding-left: 0;
+}
 /* ======= MEDIUM SCREEN ======== */
 
 @media only screen and (min-width: 800px){
@@ -158,6 +160,9 @@ footer li:first-child{
         display: flex;
         justify-content: space-between;
         box-sizing: border-box;
+        padding: 1rem 0;
+        max-width: 70%;
+        margin: 0 auto;
     }
     .container{
         max-width: 70%;
@@ -167,6 +172,10 @@ footer li:first-child{
         display: flex;
         align-items: flex-start;
         padding-bottom: 3rem;
+    }
+    .banner h2{
+        max-width: 70%;
+        margin: 0 auto;
     }
     .blog > .reverse{
         display: flex;
